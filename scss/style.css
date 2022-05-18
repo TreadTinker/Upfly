@@ -1,0 +1,238 @@
+/*----Обнуление----*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active{
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+nav, footer,header,aside {
+  display: block;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none; color: inherit;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {
+  font-size: inherit;
+  font-weight: 400; 
+}
+body{
+  font-family: Rubik;
+  font-size: 12px;
+  color: #616161;
+}
+/*------------------*/
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media (max-width: 767.98px) {
+  {
+    max-width: none;
+  }
+}
+/*MOBILE SMALL*/
+@media (max-width:479.98px) {
+}
+/*----------------*/
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 79px;
+  width: 100%;
+  margin-top: 24px;
+}
+.header__main-logo {
+}
+.main-logo {
+}
+.header__main-menu {
+}
+.main-menu_list {
+  display: flex;
+  justify-content: space-between;  
+  width: 499px;
+}
+.main-menu_list::before{
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 0px;
+  left: 672px;
+  top: 50px;
+  border: 1px solid #D8BFA9;
+}
+.main-menu_item {
+  font-family: 'Garamond';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #161616;
+}
+.main-menu_link {
+}
+.header__main-contacts {
+  display: flex;
+  align-items: center;
+}
+.main-contacts_number {
+  padding-left: 16px;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #B8926B;
+}
+/*------------------*/
+.main{
+  flex: 1 1 auto;
+}
+.main-section{
+  margin-top: 44px;
+max-width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.main__text {
+  max-height: 290px;
+  max-width: 664px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__text-title {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 66px;
+  color: #161616
+}
+.main__text-title::before{
+  content: '';
+  position: absolute;
+  width: 356.46px;
+  height: 210.06px;
+  left: 310px;
+  top: 140px;
+  background-image: url(/img/main/графика.svg);
+  z-index: -2;
+}
+.main__text-description {
+  padding-top: 32px;
+  max-width: 580px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  color: #161616;
+}
+.main-button_zakaz {
+  margin-top: 64px;
+  width: 210px;
+  height: 59px;
+  border: none;
+  background: #69766D;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #F6F6F5;
+}
+.main__photo{
+}
+.main__social {
+  margin-top: 240px;
+}
+.main__social-list {
+   
+}
+.main__social-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+/*-----------------*/
+.second_section {
+  margin-top: 90px;
+  max-width: 100%;
+  align-items: center;
+}
+.second__title {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  color: #161616;
+  text-align: center;
+}
+.steps__boquete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  min-height: 250px;
+}
+.boquete-step {
+  max-width: 176px;
+  display: flex;
+  flex-direction: column;
+}
+.boquete-step img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.boquete-step_text{
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+}
+.boquete-step_title {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 20px;
+  color: #161616;
+}
+.boquete-step_description {
+  margin-top: 24px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161616;
+}
