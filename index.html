@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="scss/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,17 @@
         <img class="main-logo" src="img/main/logo.png" alt="">
       </div>
       <div class="header__main-menu">
-        <ul class="main-menu_list">
-          <li class="main-menu_item"><a href="" class="main-menu_link">Букеты</a></li>
-          <li class="main-menu_item"><a href="" class="main-menu_link">Отзывы</a></li>
-          <li class="main-menu_item"><a href="" class="main-menu_link">Доставка и оплата</a></li>
-          <li class="main-menu_item"><a href="" class="main-menu_link">Контакты</a></li>
-        </ul>
+        <nav class="header__nav">
+          <div class="header__nav-burger">
+            
+          </div>
+          <ul class="main-menu_list">
+            <li class="main-menu_item"><a href="" class="main-menu_link">Букеты</a></li>
+            <li class="main-menu_item"><a href="" class="main-menu_link">Отзывы</a></li>
+            <li class="main-menu_item"><a href="" class="main-menu_link">Доставка и оплата</a></li>
+            <li class="main-menu_item"><a href="" class="main-menu_link">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="header__main-contacts">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +39,7 @@
     <main class="main">
       <div class="popup_bg">
         <form action="" class="popup">
-          <img class="close-popup" src="img/popup/close.svg">
+          <img class="close-popup" src="img/popup/close.svg" alt="close">
           <h3 class="popup-title">Обратный звонок</h3>
           <label>
             <input type="text" name="name">
@@ -59,7 +64,7 @@
           <a href="#" class="open-popup">Заказать сейчас</a>
         </div>
         <div class="main__photo">
-          <img id="photo_main" src="img/main/photo.png" alt="">
+          <img id="photo_main" src="img/main/photo.png" alt="photo">
         </div>
         <div class="main__social">
           <ul class="main__social-list">
@@ -103,35 +108,35 @@
           <h2>5 шагов к авторскому букету</h2>
         </div>
         <div class="steps__boquete">
-          <div class="boquete-step">
+          <div class="boquete-step step-1">
             <img src="img/main/2.png" alt="">
             <div class="boquete-step_text">
               <span class="boquete-step_title">Заказ</span>
               <span class="boquete-step_description">Выберите букет и оформите заказ</span>
             </div>
           </div>
-          <div class="boquete-step">
+          <div class="boquete-step step-2">
             <img src="img/main/5.png" alt="">
             <div class="boquete-step_text">
               <span class="boquete-step_title">Детали</span>
               <span class="boquete-step_description">Мы вам перезвоним в течение 10 минут и уточним детали</span>
             </div>
           </div>
-          <div class="boquete-step">
+          <div class="boquete-step step-3">
             <img src="img/main/3.png" alt="">
             <div class="boquete-step_text">
               <span class="boquete-step_title">Оплата</span>
               <span class="boquete-step_description">Оплатите онлайн или при получении</span>
             </div>
           </div>
-          <div class="boquete-step">
+          <div class="boquete-step step-4">
             <img src="img/main/4.png" alt="">
             <div class="boquete-step_text">
               <span class="boquete-step_title">Сборка и упаковка</span>
               <span class="boquete-step_description">Собререм букет с учетом ваших пожеланий и упакуем для доставки</span>
             </div>
           </div>
-          <div class="boquete-step">
+          <div class="boquete-step step-5">
             <img src="img/main/1.png" alt="">
             <div class="boquete-step_text">
               <span class="boquete-step_title">Доставка</span>
