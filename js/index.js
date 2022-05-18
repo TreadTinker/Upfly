@@ -1,4 +1,4 @@
-let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+let popupBg = document.querySelector('.popup_bg'); // Фон попап окна
 let popup = document.querySelector('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
 let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
@@ -10,12 +10,10 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
       popup.classList.add('active'); // И для самого окна
   })
 });
-
 closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
   popupBg.classList.remove('active'); // Убираем активный класс с фона
   popup.classList.remove('active'); // И с окна
 });
-
 document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
   if(e.target === popupBg) { // Если цель клика - фот, то:
       popupBg.classList.remove('active'); // Убираем активный класс с фона
