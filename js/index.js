@@ -1,7 +1,7 @@
 let popupBg = document.querySelector('.popup_bg'); // Фон попап окна
 let popup = document.querySelector('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окн
 
 openPopupButtons.forEach((button) => { // Перебираем все кнопки
   button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
