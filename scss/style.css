@@ -82,14 +82,22 @@ body{
   justify-content: space-between;  
   width: 499px;
 }
-.main-menu_list::before{
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 0px;
-  left: 0px;
-  top: -2px;
-  border: 1px solid #D8BFA9;
+.main-menu_list li a{
+  color: #161616;
+}
+.main-menu_list li a::before{
+  background-color: #D8BFA9; 
+  display: block;
+  content: "";
+  height: 2px; 
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.main-menu_list li a:hover::before,
+.main-menu_list li a:focus:before{
+  width: 100%
 }
 .main-menu_item {
   font-family: 'Garamond';
@@ -172,7 +180,6 @@ align-items: center;
   color: #F6F6F5;
   text-align: center;
 }
-
 .main__social {
   margin-top: 240px;
 }
@@ -186,6 +193,7 @@ align-items: center;
   align-items: center;
 }
 .second__title {
+  position: relative;
   font-family: 'Garamond';
   font-style: normal;
   font-weight: 400;
@@ -193,6 +201,14 @@ align-items: center;
   line-height: 45px;
   color: #161616;
   text-align: center;
+}
+h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 29%;
+  width: 69px;
+  border: 1px solid #D8BFA9;
 }
 .steps__boquete {
   display: flex;
@@ -284,6 +300,11 @@ align-items: center;
   font-size: 20px;
   line-height: 22px;
   color: #fff;
+  
+}
+.open-popup:hover{
+  background-color: #526e59;
+  transition: .2s all ease;
 }
 .popup_bg {
   position: fixed;
